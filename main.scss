@@ -1,0 +1,76 @@
+
+@import "components/reset";
+@import "components/variables";
+@import "blocks/menu";
+
+$lg: 1440px;
+$mb: 1024px;
+$sm: 768px;
+$xs: 596px;
+
+.header {
+    &__container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    &__text {
+        width: 50%;
+    }
+
+    &__images {
+        position: absolute;
+        width: 50%;
+        align-self: flex-end;
+        text-align: center;
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.nav {
+    padding: 11px 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: block;
+    }
+
+    @media screen and (max-width:$sm) {
+        
+    }
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 21.3333px;
+    line-height: 25px;
+    color: $color-black;
+}
+
+.button {
+    background-color:#0077C0;
+    border-radius: 4.44444px;
+    color: $c-white;
+    padding: 6px 10px;
+    width: max-content;
+    font-weight: 600;
+    font-size: 8px;
+}

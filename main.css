@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    overflow-x: hidden;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+    font-size: 16px;
+  }
+  
+  div {
+    box-sizing: border-box;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  a {
+    display: block;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  a:hover, a:active, a:visited {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  ul, ol {
+    
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu {
+    display: flex;
+  }
+  .menu__item:not(:last-of-type) {
+    margin-right: 10px;
+  }
+  .menu__item .menu__link {
+    color: #000;
+  }
+  .header__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .header__text {
+    width: 50%;
+  }
+  .header__images {
+    position: relative;
+    width: 50%;
+    align-self: flex-end;
+    text-align: center;
+    margin-top: 19px;
+  }
+  .header__icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .nav {
+    padding: 11px 0;
+  }
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__logo {
+    display: block;
+  }
+  .container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+    width: 100%;
+  }
+  
+  .title {
+    font-weight: 700;
+    font-size: 21.3333px;
+    line-height: 25px;
+    color: #000;
+  }
+  
+  .button {
+    background: #0077C0;
+    border-radius: 4.44444px;
+    color: #fff;
+    padding: 6px 10px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    font-weight: 600;
+    font-size: 8px;
+  }
+
+  .header__cotainer {
+    display: flex;
+    padding: 64px 40px 0px 72px;
+  }
+
+  .header__text {
+    margin-top: 80px;
+  }
+
+  .header__title {
+    font-size: 26.6px;
+    width: 242.67px
+  }
+
+  .header__desc {
+    margin-top: 12px;
+    font-size: 7px;
+    line-height: 150%;
+    width: 171.56px
+  }
+
+  .header__botton {
+    font-size: 8px;
+    margin-top: 15px;
+  }
+
+  .header__brand {
+    padding: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__icon {
+    z-index: -1;
+  }
+
+.textes {
+  text-align: center;
+}
+
+.feature__desc {
+  font-size: 7px;
+  padding-top: 35px;
+  color: white;
+}
+
+.feature__section {
+  background:  #0077C0;
+}
+
+.skill__title {
+  color: white;
+  margin-bottom: 7px;
+}
+
+.skill__intro {
+  color: white;
+  font-size: 7px;
+  margin-bottom: 59px;
+}
+
+.feature__container {
+  display: flex;
+}
+
+.titorial__title {
+  padding-bottom: 34px;
+  color: white;;
+}
+
+.skill_images {
+  margin-bottom: 21px;
+}
+
+.container__tuttorial {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tuttorial__title {
+font-size: 22px;
+padding-bottom: 17px;
+}
+
+.tuttorial__img {
+  margin: 30px 52px 32px 72px;
+}
+
+.tuttorial__content {
+  justify-content: center;
+  margin-right: 72px;
+}
+
+.list__item {
+  padding-bottom: 12px;
+  font-size: 7px;
+}
