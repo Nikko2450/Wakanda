@@ -263,4 +263,52 @@ ul, ol {
 }
 .research__button {
   margin-top: 12px;
+}
+
+.comments {
+  padding: 38px 0 30px;
+}
+.comments__desc {
+  color: #0077C0;
+}
+.comments__container {
+  display: flex;
+}
+.comments__title {
+  margin-bottom: 29px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.development {
+  background: #0077C0;
+  padding-top: 21px;
+}
+.development__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.development__text {
+  width: 50%;
+}
+.development__image {
+  position: relative;
+  width: 50%;
+  align-self: start;
+  top: 4px;
+}
+.development__title {
+  font-style: 21px;
+  color: #fff;
+  margin-top: 3px;
+}
+.development__button {
+  background: #fff;
+  color: #0077C0;
+  margin-top: 10px;
+}
+.development__desc {
+  color: #fff;
+  text-align: start;
 }/*# sourceMappingURL=main.css.map */
