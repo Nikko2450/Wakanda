@@ -224,4 +224,43 @@ ul, ol {
 }
 .talent-list__item:nth-child(5)::before {
   content: "5";
+}
+
+.research {
+  background: #C7EEFF;
+  padding-top: 13px;
+}
+.research__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.research__text {
+  width: 50%;
+}
+.research__images {
+  position: relative;
+  width: 50%;
+  align-self: flex-end;
+  text-align: center;
+  z-index: 1;
+  top: 7px;
+}
+.research__icon {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+.research__title {
+  font-size: 21px;
+}
+.research__desc {
+  margin-top: 6px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.research__button {
+  margin-top: 12px;
 }/*# sourceMappingURL=main.css.map */
