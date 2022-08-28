@@ -96,6 +96,7 @@ $xs: 596px;
     width: 100%;
     top: 0;
     background-color: $c-white;
+    z-index: 2;
 
     &__container {
         display: flex;
@@ -275,6 +276,7 @@ $xs: 596px;
 
 .comments {
     padding: 38px 0 30px;
+    background: #FAFAFA;
 
     &__desc {
         color: $c-blue;
@@ -292,7 +294,42 @@ $xs: 596px;
 }
 
 .comment {
-    
+    display: flex;
+    flex-wrap: wrap;
+    background: $c-white;
+    width: 33%;
+    padding: 8px;
+
+    &:not(:last-of-type) {
+        margin-right: 10px;
+    }
+
+    &__icons {
+        display: flex;
+        margin-top: 5px;
+        
+        img {
+            width: 12px;
+        }
+    }
+
+    &__intro {
+        width: 100%;
+        margin-top: 7px;
+        line-height: calc(16px * 1.75);
+    }
+
+    &__image {
+        margin-right: 7px;
+
+        img {
+            width: 35px;
+            height: 35px;
+            display: block;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
 }
 
 .development {
@@ -331,6 +368,106 @@ $xs: 596px;
     &__desc {
         color: $c-white;
         text-align: start;
+    }
+}
+
+.footer {
+    background: #1D242B;
+    padding: 30px 0 28px;
+    
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__social {
+        display: flex;
+        margin-top: 18px;
+
+
+        a {
+            width: 15px;
+            height: 15px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $c-white;
+                display: block;
+                border-radius: 50%;
+                opacity: 0.1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;                
+            }
+
+            &:not(:last-of-type) {
+                margin-right: 7px;
+            }
+        }
+    }
+
+    &__copyright {
+        color: #D9DBE1;
+        font-size: 10px;
+        margin-top: 17px;
+    }
+
+    &__intro {
+        color: $c-white;
+    }
+
+    &__email {
+        display: flex;
+        position: relative;
+        padding: 4px 6px;
+        margin-top: 10px;
+
+        input, button {
+            outline: 0;
+            background-color: transparent;
+            border: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $c-white;
+            display: block;
+            border-radius: 3px;
+            opacity: 0.2;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }           
+    }
+
+    &__info {
+        margin-right: auto;
+    }
+
+    &__menu {
+        width: 15%;
+    }
+}
+
+.menu-list {
+    font-size: 12px;
+    margin-top: 10px;
+
+    &__item {
+        &:not(:last-of-type) {
+            margin-bottom: 5px;
+        }
+    }
+    a {
+        color: #D9DBE1;
     }
 }
 
