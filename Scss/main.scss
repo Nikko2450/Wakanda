@@ -6,7 +6,7 @@
 $lg: 1440px;
 $mb: 1024px;
 $sm: 768px;
-$xs: 596px;
+$xs: 576px;
 
 .container {
     margin: 0 auto;
@@ -70,6 +70,14 @@ $xs: 596px;
 
     &__title {
         font-size: 42px;
+
+        @media (max-width: $sm) {
+            font-size: 30px;
+        }
+    
+        @media (max-width: $xs) {
+            font-size: 20px;
+        }
     }
 
     &__desc {
@@ -87,6 +95,16 @@ $xs: 596px;
         justify-content: space-between;
         align-items: center;
         margin-top: 42px;
+
+    
+        @media (max-width: $xs) {
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            img {
+                margin-bottom: 5px;
+            }
+        }
     }
 }
 
@@ -123,6 +141,7 @@ $xs: 596px;
 
     &__container {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__title {
@@ -134,8 +153,10 @@ $xs: 596px;
 }
 
 .skill {
+    width: 32%;
+
     &:not(:last-of-type) {
-        margin-left: 10px;
+        margin-right: 10px;
     }
 
     &__title {
@@ -159,6 +180,20 @@ $xs: 596px;
         justify-content: center;
         align-items: center;
     }
+
+    @media (max-width: $sm) {
+        &__title {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: $xs) {
+        width: 100%;
+        &:not(:last-of-type) {
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .tutorial {
@@ -171,6 +206,12 @@ $xs: 596px;
     }
     &__title {
         margin-bottom: 14px;
+    }
+
+    @media (max-width: $xs) {
+        &__img {
+            display: none;
+        }
     }
 }
 
@@ -235,10 +276,18 @@ $xs: 596px;
         height: 100%;
         display: flex;
         align-items: center;
+
+        @media (max-width: $xs) {
+            flex-wrap: wrap;
+        }      
     }
 
     &__text {
         width: 50%;
+
+        @media (max-width: $xs) {
+            width: 100%;
+        }      
     }
 
     &__images {
@@ -248,6 +297,10 @@ $xs: 596px;
         text-align: center;
         z-index: 1;
         top: 7px;
+
+        @media (max-width: $xs) {
+            width: 100%;
+        }      
     }
 
     &__icon {
@@ -271,7 +324,6 @@ $xs: 596px;
     &__button {
         margin-top: 12px;
     }
-
 }
 
 .comments {
@@ -284,6 +336,7 @@ $xs: 596px;
 
     &__container {
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__title {
@@ -297,7 +350,7 @@ $xs: 596px;
     display: flex;
     flex-wrap: wrap;
     background: $c-white;
-    width: 33%;
+    width: 32%;
     padding: 8px;
 
     &:not(:last-of-type) {
@@ -330,6 +383,20 @@ $xs: 596px;
             object-fit: cover;
         }
     }
+
+    @media (max-width: $sm) {
+        &__title {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: $xs) {
+        width: 100%;
+        &:not(:last-of-type) {
+            margin-right: 0px;
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .development {
@@ -340,10 +407,16 @@ $xs: 596px;
         height: 100%;
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     &__text {
         width: 50%;
+
+        @media (max-width: $xs) {
+            width: 100%;
+            order: -1;
+        }
     }
 
     &__image {
@@ -351,6 +424,10 @@ $xs: 596px;
         width: 50%;
         align-self: start;
         top: 4px;
+
+        @media (max-width: $xs) {
+            width: 100%;
+        }
     }
 
     &__title {
@@ -378,6 +455,7 @@ $xs: 596px;
     &__container {
         display: flex;
         justify-content: flex-end;
+        flex-wrap: wrap;
     }
 
     &__social {
@@ -427,6 +505,7 @@ $xs: 596px;
         position: relative;
         padding: 4px 6px;
         margin-top: 10px;
+        width: max-content;
 
         input, button {
             outline: 0;
@@ -450,10 +529,27 @@ $xs: 596px;
 
     &__info {
         margin-right: auto;
+
+        @media (max-width: $xs) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
     }
 
     &__menu {
         width: 15%;
+
+        @media (max-width: $xs) {
+            width: 50%;
+        }
+    }
+
+    &__subscription {
+
+        @media (max-width: $xs) {
+            width: 100%;
+            margin-top: 10px;
+        }
     }
 }
 
